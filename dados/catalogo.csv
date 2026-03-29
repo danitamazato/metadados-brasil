@@ -1,9 +1,9 @@
 nome,fonte,url,descricao,formato,atualizacao,temas,atributos_principais,usos_possiveis
-Censo Escolar,INEP,,,,,Educação,,
-ENEM — Microdados,INEP,,,,,Educação,,
-Mortalidade — SIM,DataSUS,,,,,Saúde,,
-CNES — Estabelecimentos de Saúde,DataSUS,,,,,Saúde,,
-RAIS — Mercado de Trabalho,MTE,,,,,Trabalho,,
-Índice de Desenvolvimento Humano,IBGE/PNUD,,,,,Social,,
-Orçamento Federal,Portal da Transparência,,,,,Economia,,
-Acidentes de Trânsito nas Rodovias,PRF,,,,,Segurança,,
+Censo Escolar,INEP,https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-escolar,Dados sobre escolas matrículas docentes e infraestrutura da educação básica brasileira,CSV,Anual,Educação,"escola, municipio, uf, etapa_ensino, matriculas, docentes, infraestrutura",Análise de acesso à educação por região e desigualdade escolar
+ENEM - Microdados,INEP,https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem,Microdados do Exame Nacional do Ensino Médio com notas e perfil socioeconômico dos participantes,CSV,Anual,Educação,"nu_nota_mt, nu_nota_lc, nu_nota_cn, nu_nota_ch, nu_nota_redacao, q_renda, uf_esc",Análise de desempenho por perfil socioeconômico e região
+Mortalidade - SIM,DataSUS,https://datasus.saude.gov.br/transferencia-de-arquivos,Registros de óbitos no Brasil com causa sexo idade e localidade,DBC/CSV,Anual,Saúde,"causa_basica, idade, sexo, municipio, ano_obito, escolaridade",Análise de causas de mortalidade por região e perfil demográfico
+CNES - Estabelecimentos de Saúde,DataSUS,https://datasus.saude.gov.br/transferencia-de-arquivos,Cadastro nacional de estabelecimentos de saúde com tipo porte e localização,DBC/CSV,Mensal,Saúde,"tipo_unidade, municipio, uf, leitos, tipo_gestao, natureza_juridica",Mapeamento da cobertura e distribuição de serviços de saúde
+RAIS - Mercado de Trabalho,MTE,https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/estatisticas-trabalho/rais,Relação Anual de Informações Sociais com dados de vínculos empregatícios formais no Brasil,CSV,Anual,Trabalho,"municipio, cnae, salario, escolaridade, sexo, raca_cor, idade",Análise do mercado formal de trabalho por setor região e perfil do trabalhador
+Índice de Desenvolvimento Humano,IBGE/PNUD,https://www.br.undp.org/content/brazil/pt/home/idh0.html,Indicadores de desenvolvimento humano por município incluindo educação saúde e renda,CSV/XLSX,Decenal,Social,"idhm, idhm_educacao, idhm_saude, idhm_renda, municipio, uf, populacao",Comparação de desenvolvimento humano entre municípios e regiões brasileiras
+Orçamento Federal,Portal da Transparência,https://portaldatransparencia.gov.br/download-de-dados,Dados de receitas e despesas do governo federal com detalhamento por órgão e função,CSV,Mensal,Economia,"orgao, funcao, subfuncao, valor_empenhado, valor_liquidado, valor_pago, ano",Análise de gastos públicos por área e acompanhamento da execução orçamentária
+Acidentes de Trânsito nas Rodovias,PRF,https://www.gov.br/prf/pt-br/acesso-a-informacao/dados-abertos/dados-abertos-da-prf,Registros de acidentes nas rodovias federais com causa tipo local e vítimas,CSV,Anual,Segurança,"data, uf, municipio, causa_acidente, tipo_acidente, mortos, feridos, condicao_metereologica",Análise de pontos críticos de acidentes e fatores de risco nas rodovias federais
