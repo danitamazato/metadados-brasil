@@ -1,4 +1,11 @@
 import pandas as pd
+import unicodedata
+
+def remover_acentos(texto):
+    # Normaliza o texto e remove os caracteres de acento
+    return unicodedata.normalize("NFD", texto)\
+        .encode("ascii", "ignore")\
+        .decode("utf-8")
 
 # Carregar o catálogo
 df = pd.read_csv("dados/catalogo.csv", encoding="utf-8")
@@ -20,7 +27,10 @@ tema_escolhido = input("Digite um tema para filtrar (ou ENTER para ver todos): "
 if tema_escolhido.strip() == "":
     resultado = df
 else:
-    resultado = df[df["temas"].str.contains(tema_escolhido, case=False, na=False)]
+    # Cria uma coluna temporária sem acentos para comparar
+    temas_sem_acento = df["temas"].apply(remover_acentos)
+    busca_sem_acento = remover_acentos(tema_escolhido)
+    resultado = df[temas_sem_acento.str.contains(busca_sem_acento, case=False, na=False)]
 
 # Exibir resultado
 print("\n" + "=" * 55)
